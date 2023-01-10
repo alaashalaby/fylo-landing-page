@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --lightGrayishBlue: hsl(240, 75%, 98%);
+    --lightGray:hsl(0, 0%, 75%);
+    --brightBlue: hsl(224, 93%, 58%);
+    --moderateCyan: hsl(170, 45%, 43%);
+    --veryDarkBlue: hsl(243, 87%, 12%);
+    --desaturatedBlue: hsl(238, 22%, 44%);
+    --transition:0.5s ease-in-out;
+}
+h1 , h2{
+    font-family: 'Raleway', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.d-grid{
+    display: grid;
+}
+.btn{
+    border: none;
+    outline: none;
+    background: var(--brightBlue);
+    color: #fff;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 30%);
+    padding: 9px 55px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+/* End Header */
+header nav img.logo{
+    height: 33px;
+}
+header nav{
+    margin-bottom: 40px;
+}
+header nav ul li a{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 20px;
+    color: var(--desaturatedBlue);
+    transition: var(--transition);
+}
+header nav ul li a:hover {
+    color: var(--brightBlue);
+}
+header .header-content .text-info h1{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+header .header-content .text-info p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+header .header-content .text-info form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+header .header-content .text-info form input[type="email"]{
+    padding: 10px 120px 10px 10px;
+    outline: none;
+    border: 1px solid var(--lightGray);
+    border-radius: 4px;
+}
+header .header-content .image img{
+    width: 100%;
+    max-width: 100%;
+}
+/* End Header */
+/* Start main Section */
+main{
+    background-image: url(../images/bg-curve-desktop.svg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:100px 0;
+}
+main .main-content{
+    gap: 63px;
+}
+main .main-content > div{
+    flex: 1;
+}
+main .main-content .main-text{
+    width: 55%;
+}
+main .main-content .main-text h1{
+    margin-bottom: 35px;
+}
+main .main-content .main-text p:first-of-type{
+    font-weight:500;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    font-family: "open sans";
+}
+main .main-content .main-text p:last-of-type{
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+main .main-content .main-text a{
+    color: var(--moderateCyan);
+    gap: 6px;
+    margin-bottom: 40px;
+    position: relative;
+}
+main .main-content .main-text a::after{
+    content: "";
+    width:165px;
+    height: 1px;
+    background-color: var(--moderateCyan);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+main .main-content .main-text .card{
+    background-color: #fff;
+    border-radius: 7px;
+    width: 65%;
+    padding: 25px;
+}
+main .main-content .main-text .card .quote{
+    height: 20px;
+}
+main .main-content .main-text .card p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+main .main-content .main-text .card .card-info{
+    gap: 10px;
+}
+main .main-content .main-text .card .card-info .card-img img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+main .main-content .main-text .card .card-text h5{
+    font-weight: bold;
+}
+main .main-content .main-text .card .card-text p{
+    font-size: 14px;
+}
+main .main-content .main-img {
+    width: 45%;
+}
+main .main-content .main-img img{
+    width: 100%;
+    max-width: 100%;
+}
+/* End main Section */
+/* Start Registeration*/
+.registeration{
+    background-color: var(--desaturatedBlue);
+    padding: 30px 0;
+}
+.registeration .registeration-content{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 190px;
+}
+.registeration .registeration-text h2{
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.registeration .registeration-text p{
+    color: #fff;
+    line-height: 1.5;
+}
+.registeration .registeration-form{
+    flex-direction: column;
+}
+.registeration .registeration-form input[type="email"]{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px 110px 10px 10px;
+    margin-bottom: 15px;
+}
+.registeration .registeration-form input::placeholder{
+    opacity: 0.4;
+}
+.registeration .registeration-form button{
+    width: fit-content;
+}
+/* End Registeration*/
+
+/* Start Footer*/
+footer{
+    background-color: var(--veryDarkBlue);
+    padding: 60px 0;
+}
+footer .footer-content{
+    flex-direction: column;
+    gap: 25px;
+}
+footer .footer-content > div{
+    flex: 1;
+}
+footer .footer-content .logo img{
+    height: 33px;
+    filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+}
+footer .footer-content .col{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 70px;
+}
+footer .footer-content .col .box.contact p{
+    margin-bottom: 20px;
+}
+footer .footer-content .col .box.contact p img{
+    margin-right: 10px;
+}
+footer .footer-content .col .box.contact p a{
+    color: var(--lightGray);
+}
+footer .footer-content .col ul li{
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
+footer .footer-content .col ul li a{
+    color: var(--lightGray);
+}
+footer .footer-content .col ul li:hover{
+    padding-left: 5px;
+}
+footer .col .box.socialLinks a{
+    display: inline-block;
+    color: var(--lightGray);
+    border:1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    transition: var(--transition);
+}
+footer .col .box.socialLinks a:hover{
+    color: var(--brightBlue);
+    border: 1px solid var(--brightBlue);
+}
+/* End Footer*/
+
+
+@media (max-width: 768px) {
+    header nav img.logo {
+        height: 25px;
+    }
+    header nav ul li a {
+        margin: 0 5px;
+    }
+    header .header-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    header .header-content .text-info {
+        text-align: center;
+    }
+    header .header-content .text-info h1 {
+        font-size: 25px;
+    }
+    header .header-content .text-info p {
+        font-size: 16px;
+    }
+    header .header-content .text-info form{
+        justify-content: center;
+    }
+    header .header-content .text-info form button {
+        margin-top: 10px;
+        width: 85%;
+    }
+    main{
+        padding: 50px 0;
+    }
+    main .main-content {
+        flex-direction: column-reverse;
+    }
+    main .main-content .main-text h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    main .main-content .main-text a{
+        justify-content: center;
+    }
+    main .main-content .main-text a::after{
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+    main .main-content .main-text,
+    main .main-content .main-img {
+        width: 100%;
+    }
+    main .main-content .main-text .card {
+        width: 100%;
+    }
+    .registeration .registeration-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .registeration .registeration-text{
+        text-align: center;
+    }
+    .registeration .registeration-text h2{
+        font-size: 25px;
+    }
+    .registeration .registeration-content .registeration-form button {
+        width: 100%;
+    }
+    footer .footer-content .col{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    footer .col .box.socialLinks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
